@@ -1,0 +1,50 @@
+/* Styles go here */
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+h1{
+}
+ul li{
+    list-style:none;
+    line-height:3;
+    width:100%;
+    padding-left:10px;
+    position:relative;
+    overflow:hidden;
+}
+ul li:hover{
+    cursor:pointer;
+}
+.ripple{
+    position: absolute;
+    background: hsl(180, 40%, 80%);
+    border-radius:100%;
+    transform:scale(0);
+    pointer-events:none;
+}
+.animate{
+    transform:scale(2.5);
+    transition:0.67s linear;
+    opacity:0;
+}
+ul{
+    margin: 0 auto;
+    background-color:#fff;
+    border:1px solid ;
+    padding:0;
+    width:200px;
+    text-align:left;
+    border-top:6px solid green;
+}
